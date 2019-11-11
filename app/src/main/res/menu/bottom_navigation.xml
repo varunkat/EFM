@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="EFM Guide"
+
+        />
+
+    <item
+        android:id="@+id/nav_disclaimer"
+        android:icon="@drawable/ic_warning_black_24dp"
+        android:title="Disclaimer"
+
+        />
+
+        <item
+            android:id="@+id/nav_info"
+            android:icon="@drawable/ic_info_outline_black_24dp"
+            android:title="Info"
+            />
+
+
+        <item
+            android:id="@+id/nav_ref"
+            android:icon="@drawable/ic_format_list_bulleted_black_24dp"
+            android:title="references"
+
+            />
+</menu>
