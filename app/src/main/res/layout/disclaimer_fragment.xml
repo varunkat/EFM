@@ -4,15 +4,16 @@
 
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/disclaimerTitleTv"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
+        android:layout_height="50dp"
 
-        android:layout_centerInParent="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginEnd="160dp"
-        android:layout_marginRight="160dp"
         android:text="Disclaimer" />
+
+
+    <TextView android:id="@+id/disclaimerMessageTv"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+
+        />
 </RelativeLayout>
