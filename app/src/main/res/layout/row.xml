@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:layout_margin="5dp"
+    >
+
+
+    <ImageView android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_camera_alt_black_24dp"
+        android:id="@+id/imagecam"
+        android:layout_margin="5dp"
+        />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    >
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textColor="#000"
+        android:id="@+id/descTV"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        />
+</LinearLayout>
+
+
+
+
+
+</LinearLayout>

@@ -11,18 +11,22 @@ public class FileInput  {
 
 
     Context context;
+    String tex;
+
+    public FileInput() {
+
+    }
 
 
-
-    public FileInput(Context context) throws IOException {
+    public String FileInputText(Context context, String fileName) throws IOException {
 
     this.context = context;
 
         AssetManager assetManager = context.getAssets();
         // To load text file
         InputStream input;
-        try {
-            input = assetManager.open("Disclaimer");
+
+            input = assetManager.open(fileName);
 
             int size = input.available();
             byte[] buffer = new byte[size];
@@ -30,14 +34,11 @@ public class FileInput  {
             input.close();
 
             // byte buffer into a string
-            String tex = new String(buffer);
+            tex = new String(buffer);
 
 
-        } catch (
-                IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
 
+
+        return tex;
     }
 }

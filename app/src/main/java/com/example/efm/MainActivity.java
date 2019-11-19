@@ -15,17 +15,12 @@ import java.io.IOException;
 public class MainActivity extends AppCompatActivity {
 
     Context context;
-    FileInput fileInput;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        try {
-            fileInput = new FileInput(this);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+       
 
 
         BottomNavigationView bottomNavigationView =  findViewById(R.id.bottom_nav);

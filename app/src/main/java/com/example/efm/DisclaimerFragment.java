@@ -19,6 +19,8 @@ public class DisclaimerFragment extends Fragment {
 
     TextView titleTv,textTv;
     AssetManager assetManager;
+    FileInput fileInput;
+
 
     @Nullable
     @Override
@@ -27,30 +29,15 @@ public class DisclaimerFragment extends Fragment {
        View v = inflater.inflate(R.layout.disclaimer_fragment, container, false);
         assetManager = v.getContext().getAssets();
         textTv = v.findViewById(R.id.disclaimerMessageTv);
-
-
-        // To load text file
-        InputStream input;
+        fileInput = new FileInput();
         try {
-            input = assetManager.open("Disclaimer");
+            textTv.setText(fileInput.FileInputText(v.getContext(),"Disclaimer"));
 
-            int size = input.available();
-            byte[] buffer = new byte[size];
-            input.read(buffer);
-            input.close();
 
-            // byte buffer into a string
-            String tex = new String(buffer);
-
-            textTv.setText(tex);
         } catch (IOException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
 
-
-
-        //textTv.setText(text);
 
         return v;
 
