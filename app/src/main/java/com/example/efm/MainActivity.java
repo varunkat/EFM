@@ -4,17 +4,28 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import java.io.IOException;
+
 public class MainActivity extends AppCompatActivity {
+
+    Context context;
+    FileInput fileInput;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        try {
+            fileInput = new FileInput(this);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
 
         BottomNavigationView bottomNavigationView =  findViewById(R.id.bottom_nav);
