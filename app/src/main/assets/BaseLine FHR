@@ -1,0 +1,12 @@
+<h1 style="color:#000;">Quick points</h1>
+<ul  style="color:#000;"><b>
+<ul>
+<li><strong>&nbsp;The approximate mean FHR rounded to increments of 5 bpm during 10 minute window, excluding accels,&nbsp; &nbsp;decels, and periods of marked FHR variability (&gt; 25 bpm).</strong></li>
+<li><strong>&nbsp;bradycardia: baseline &lt; 110 bpm.</strong></li>
+<li><strong>&nbsp;tachycardia: baseline &gt; 160 bpm.</strong></li>
+</ul>
+<p>&nbsp;</p>
+<h2><span style="text-decoration: underline;"><strong>Details</strong></span></h2>
+<ul>
+<li><strong> Must be at least 2 minutes of identifiable baseline segments (not necessarily contiguous) in any 10 minute window otherwise baseline for that period is indeterminate. In such case, refer to previous 10 minute window baseline.</strong></li>
+</ul>

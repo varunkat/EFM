@@ -2,7 +2,6 @@ package com.example.efm;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
@@ -26,7 +25,7 @@ public class SysevalFragment extends Fragment {
 
         fileInput = new FileInput();
         try {
-            textview.setText(fileInput.FileInputText(view.getContext(),"button4text"));
+            textview.setText(fileInput.FileInputText(view.getContext(), "button4Content"));
 
 
         } catch (IOException e) {

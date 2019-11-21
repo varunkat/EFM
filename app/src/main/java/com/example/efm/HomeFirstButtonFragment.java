@@ -11,13 +11,15 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
-public class HomeFirstDefinationFragment extends Fragment {
+public class HomeFirstButtonFragment extends Fragment {
 
 
 
     ListView listView;
     DescAdapter descAdapter;
+    Fragment listContentFrag;
     String [] desc = {"Uterine Contractions","BaseLine FHR","Baseline Variability","Accelerations",
             "Early decelerations","Variable Decelerations","Late Decelerations","Prolonged Decelerations","Decels in general","Sinusoidal"};
     int image = R.drawable.ic_camera_alt_black_24dp;
@@ -33,15 +35,23 @@ public class HomeFirstDefinationFragment extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                if (i == 0){
-                    Toast.makeText(view.getContext(),"first",Toast.LENGTH_SHORT).show();
 
-                }
+                listContentFrag = new listContentFragment(desc[i]);
+                replaceFragment(listContentFrag);
+
             }
         });
 
 
         return view;
 
+    }
+
+
+    public void replaceFragment(Fragment someFragment) {
+        FragmentTransaction transaction = getFragmentManager().beginTransaction();
+        transaction.replace(R.id.fragment_container, someFragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
     }
 }

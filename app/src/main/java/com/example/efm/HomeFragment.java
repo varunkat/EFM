@@ -1,6 +1,5 @@
 package com.example.efm;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -39,7 +38,7 @@ public class HomeFragment extends Fragment {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                descFragment = new HomeFirstDefinationFragment();
+                descFragment = new HomeFirstButtonFragment();
                 replaceFragment(descFragment);
 
 
