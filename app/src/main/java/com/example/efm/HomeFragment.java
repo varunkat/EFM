@@ -14,8 +14,8 @@ import androidx.fragment.app.FragmentTransaction;
 public class HomeFragment extends Fragment {
 
 
-    Button b1;
-    Fragment descFragment, sysevalFrag;
+    Button b1, b3;
+    Fragment descFragment, sysevalFrag, thirdfrag;
 
 
     @Override
@@ -44,6 +44,18 @@ public class HomeFragment extends Fragment {
 
             }
         });
+
+        b3 = view.findViewById(R.id.B3);
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                thirdfrag = new HomeThirdDefinitionFragment();
+                replaceFragment(thirdfrag);
+
+            }
+        });
+
+
         return view;
 
     }
