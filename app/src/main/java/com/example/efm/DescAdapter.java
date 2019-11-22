@@ -14,14 +14,14 @@ import androidx.annotation.Nullable;
 public class DescAdapter extends ArrayAdapter<String> {
 
     String desc [];
-    int image;
+    int image [];
     Context context;
 
 
 
 
 
-    public DescAdapter(@NonNull Context context, int image, String desc[]) {
+    public DescAdapter(@NonNull Context context, int image[], String desc[]) {
         super(context,R.layout.row,R.id.descTV,desc);
         this.context = context;
         this.image = image;
@@ -42,7 +42,7 @@ public class DescAdapter extends ArrayAdapter<String> {
         ImageView imageView = view.findViewById(R.id.imagecam);
         TextView descTV = view.findViewById(R.id.descTV);
 
-        imageView.setImageResource(image);
+        imageView.setImageResource(image[position]);
         descTV.setText(desc[position]);
 
 

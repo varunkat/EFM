@@ -12,7 +12,6 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import java.io.IOException;
-import java.io.InputStream;
 
 public class DisclaimerFragment extends Fragment {
 
@@ -31,7 +30,7 @@ public class DisclaimerFragment extends Fragment {
         textTv = v.findViewById(R.id.disclaimerMessageTv);
         fileInput = new FileInput();
         try {
-            textTv.setText(fileInput.FileInputText(v.getContext(),"Disclaimer"));
+            textTv.setText(fileInput.FileInputText(v.getContext(), "Disclaimer"));
 
 
         } catch (IOException e) {

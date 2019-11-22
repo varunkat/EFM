@@ -13,7 +13,7 @@
          android:id="@+id/listTextView"
          android:padding="5dp"
          android:layout_margin="5dp"
-
+android:textSize="18dp"
          />
 
 

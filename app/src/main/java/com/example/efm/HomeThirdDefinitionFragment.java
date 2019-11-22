@@ -18,7 +18,7 @@ public class HomeThirdDefinitionFragment extends Fragment {
     DescAdapter descAdapter;
     String [] desc = {"Categoery 1 Management", "categoery 2 Management", "Categoery 3 management", "TachySystole","Minimal Variability","Intermittent Variables","Reccurent Variable Decels",
             "recurrent Late Decels","Fetal Tachy Cardia","Prolonged decel Brady Cardia"};
-    int image = R.drawable.ic_camera_alt_black_24dp;
+    int image[] = {R.drawable.ic_camera_alt_black_24dp};
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

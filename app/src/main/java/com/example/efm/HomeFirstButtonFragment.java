@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,9 +19,11 @@ public class HomeFirstButtonFragment extends Fragment {
     ListView listView;
     DescAdapter descAdapter;
     Fragment listContentFrag;
-    String [] desc = {"Uterine Contractions","BaseLine FHR","Baseline Variability","Accelerations",
-            "Early decelerations","Variable Decelerations","Late Decelerations","Prolonged Decelerations","Decels in general","Sinusoidal"};
-    int image = R.drawable.ic_camera_alt_black_24dp;
+    String [] desc = {"Uterine Contractions", "BaseLine FHR", "Baseline Variability", "Accelerations",
+            "Early Decelerations", "Variable Decelerations", "Late Decelerations", "Prolonge Decelerations", "Decels in general", "Sinusoidal"};
+    int [] image = {R.drawable.ic_camera_alt_black_24dp,R.drawable.baseline_fhr,R.drawable.baseline_variability
+            ,R.drawable.accelerations,R.drawable.early_decelerations,R.drawable.variable_decelerations,
+            R.drawable.late_decelerations,R.drawable.prolonged_decelerations,R.drawable.ic_camera_alt_black_24dp,R.drawable.sinusoidal};
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
