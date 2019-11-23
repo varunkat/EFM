@@ -11,13 +11,15 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 public class HomeThirdDefinitionFragment extends Fragment {
 
     ListView listView;
     DescAdapter descAdapter;
-    String [] desc = {"Categoery 1 Management", "categoery 2 Management", "Categoery 3 management", "TachySystole","Minimal Variability","Intermittent Variables","Reccurent Variable Decels",
-            "recurrent Late Decels","Fetal Tachy Cardia","Prolonged decel Brady Cardia"};
+    Fragment listContentFrag1;
+    String [] desc = {"Categoery 1 Management", "Categoery 2 Management", "Categoery 3 Management", "Tachysystole","Minimal Variability","Intermittent Variables","Recurrent Variable Decels",
+            "Recurrent Late Decels","Fetal Tachy Cardia","Prolonged decel Brady Cardia"};
     int image[] = {R.drawable.ic_camera_alt_black_24dp};
     @Nullable
     @Override
@@ -31,16 +33,24 @@ public class HomeThirdDefinitionFragment extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                if (i == 0){
-                    Toast.makeText(view.getContext(),"first",Toast.LENGTH_SHORT).show();
 
-                }
+                listContentFrag1 = new listContentFragment(desc[i]);
+                replaceFragment(listContentFrag1);
+
             }
+
         });
 
 
         return view;
 
     }
+    public void replaceFragment(Fragment someFragment) {
+        FragmentTransaction transaction = getFragmentManager().beginTransaction();
+        transaction.replace(R.id.fragment_container, someFragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
+    }
 }
+
 
