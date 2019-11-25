@@ -41,20 +41,20 @@ public class DescAdapter extends ArrayAdapter<String> {
 
         LayoutInflater layoutInflater = (LayoutInflater) context.getApplicationContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
-        View view = layoutInflater.inflate(R.layout.row,parent,false);
+        int layout = R.layout.row;
+        if (image.length == 0) {
+            layout = R.layout.row3;
+
+        }
+        View view = layoutInflater.inflate(layout, parent, false);
 
 
-        final ImageView imageView = view.findViewById(R.id.imagecam);
+
         TextView descTV = view.findViewById(R.id.descTV);
-
-        imageView.setImageResource(image[position]);
-        descTV.setText(desc[position]);
-
-
-
-
-        long id=getItemId(position);
-
+        if (image.length != 0)
+        {
+            final ImageView imageView = view.findViewById(R.id.imagecam);
+            imageView.setImageResource(image[position]);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -77,10 +77,8 @@ public class DescAdapter extends ArrayAdapter<String> {
         });
 
 
-
-
-
-
+    }
+        descTV.setText(desc[position]);
         return view;
     }
 }

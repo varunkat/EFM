@@ -30,7 +30,7 @@ FileInput fileInput;
         contentTV = view.findViewById(R.id.listTextView);
         fileInput= new FileInput();
         try {
-            contentList = fileInput.FileInputText(view.getContext(),"buttonOneList/"+fileName);
+            contentList = fileInput.FileInputText(view.getContext(),fileName);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -40,8 +40,6 @@ FileInput fileInput;
         } else {
             contentTV.setText(Html.fromHtml( contentList));
         }
-
-
 
         return view;
 

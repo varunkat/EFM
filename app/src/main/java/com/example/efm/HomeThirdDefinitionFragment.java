@@ -17,16 +17,16 @@ public class HomeThirdDefinitionFragment extends Fragment {
 
     ListView listView;
     DescAdapter descAdapter;
-    Fragment listContentFrag1;
+    Fragment listContentFrag;
     String [] desc = {"Categoery 1 Management", "Categoery 2 Management", "Categoery 3 Management", "Tachysystole","Minimal Variability","Intermittent Variables","Recurrent Variable Decels",
             "Recurrent Late Decels","Fetal Tachy Cardia","Prolonged decel Brady Cardia"};
-    int image[] = {R.drawable.ic_camera_alt_black_24dp};
+    int image[] = {};
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.home_third_definition_fra, container, false);
+        View view = inflater.inflate(R.layout.home_first_defination_fra, container, false);
 
-        listView = view.findViewById(R.id.listViewDef3);
+        listView = view.findViewById(R.id.listViewDef);
         descAdapter = new DescAdapter(view.getContext(),image,desc);
         listView.setAdapter(descAdapter);
 
@@ -34,8 +34,8 @@ public class HomeThirdDefinitionFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-                listContentFrag1 = new listContentFragment(desc[i]);
-                replaceFragment(listContentFrag1);
+                listContentFrag = new listContentFragment(desc[i]);
+                replaceFragment(listContentFrag);
 
             }
 

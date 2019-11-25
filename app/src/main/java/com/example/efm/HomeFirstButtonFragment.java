@@ -36,7 +36,7 @@ public class HomeFirstButtonFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.home_first_defination_fra, container, false);
         c = view.getContext();
-        
+
         listView = view.findViewById(R.id.listViewDef);
         descAdapter = new DescAdapter(view.getContext(),image,desc);
         listView.setAdapter(descAdapter);
@@ -45,13 +45,7 @@ public class HomeFirstButtonFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-
-               /* I*/
-
-
-
-
-                listContentFrag = new listContentFragment(desc[i]);
+                listContentFrag = new listContentFragment("buttonOneList/"+desc[i]);
                 replaceFragment(listContentFrag);
 
             }
