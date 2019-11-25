@@ -5,22 +5,35 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import java.io.IOException;
+
 public class HomeFragment extends Fragment {
 
 
     Button b1, b3, b2;
     Fragment descFragment, sysevalFrag, thirdfrag, secondfrag;
-
+    String hometext;
+    FileInput fileinput;
+    TextView hometextview;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.home_fragment, container, false);
+        hometextview = view.findViewById(R.id.textView4);
+        fileinput = new FileInput();
+        try {
+            hometext = fileinput.FileInputText(view.getContext(), "homescreentext");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        hometextview.setText(hometext);
 
 
 
@@ -59,7 +72,7 @@ public class HomeFragment extends Fragment {
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                secondfrag = new HomeThirdDefinitionFragment();
+                secondfrag = new HomeSecondButtonFragment();
                 replaceFragment(secondfrag);
 
             }
