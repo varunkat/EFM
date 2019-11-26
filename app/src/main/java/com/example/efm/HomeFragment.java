@@ -1,6 +1,8 @@
 package com.example.efm;
 
+import android.os.Build;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,7 +27,7 @@ public class HomeFragment extends Fragment {
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.home_fragment, container, false);
+        final View view = inflater.inflate(R.layout.home_fragment, container, false);
         hometextview = view.findViewById(R.id.textView4);
         fileinput = new FileInput();
         try {
@@ -33,7 +35,11 @@ public class HomeFragment extends Fragment {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        hometextview.setText(hometext);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            hometextview.setText(Html.fromHtml(hometext));
+        } else {
+            hometextview.setText(Html.fromHtml( hometext));
+        }
 
 
 

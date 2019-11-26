@@ -1,7 +1,9 @@
 package com.example.efm;
 
 import android.content.res.AssetManager;
+import android.os.Build;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,6 +21,7 @@ public class DisclaimerFragment extends Fragment {
     TextView titleTv,textTv;
     AssetManager assetManager;
     FileInput fileInput;
+    String disclaimerText;
 
 
     @Nullable
@@ -30,7 +33,16 @@ public class DisclaimerFragment extends Fragment {
         textTv = v.findViewById(R.id.disclaimerMessageTv);
         fileInput = new FileInput();
         try {
-            textTv.setText(fileInput.FileInputText(v.getContext(), "Disclaimer"));
+            disclaimerText =fileInput.FileInputText(v.getContext(), "Disclaimer");
+
+
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                textTv.setText(Html.fromHtml(disclaimerText));
+            } else {
+                textTv.setText(Html.fromHtml( disclaimerText));
+            }
+
+
 
 
         } catch (IOException e) {

@@ -4,6 +4,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -16,6 +18,7 @@ import java.io.IOException;
 public class MainActivity extends AppCompatActivity {
 
     Context context;
+    FragmentManager fragmentManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,10 +65,30 @@ public class MainActivity extends AppCompatActivity {
 
 
                     }
+                   // getFragmentManager().beginTransaction().remove(selectedFragment).commitAllowingStateLoss();
+                   // getSupportFragmentManager().beginTransaction().remove(selectedFragment).commitAllowingStateLoss();
+
+
+                    fragmentManager = getSupportFragmentManager();
+                    fragmentManager.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
+
 
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
 
                             selectedFragment).commit();
+
+
+
+
+
+
+
+
+
+
+
+
+
                     return true;
 
                 }

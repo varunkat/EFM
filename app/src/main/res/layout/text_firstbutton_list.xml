@@ -6,18 +6,31 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_above="@+id/managementButton"
+        >
 
-     <TextView android:layout_height="match_parent"
-         android:layout_width="match_parent"
-         android:id="@+id/listTextView"
-         android:padding="5dp"
-         android:layout_margin="5dp"
-android:textSize="18dp"
-         />
-
-
+        <TextView
+            android:id="@+id/listTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textSize="18dp" />
 
 
     </ScrollView>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="manaement"
+        android:id="@+id/managementButton"
+        android:background="#00B8D4"
+        android:layout_alignParentBottom="true"
+        />
+
+
 </RelativeLayout>
