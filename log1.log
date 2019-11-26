@@ -1,0 +1,31 @@
+* 7c24cfe : updated the home textview
+* d02a22e : updated the second button
+* fc2d327 : 3rd button
+*   e717161 : Merge branch 'master' of https://github.com/varunkat/EFM
+|\  
+| * ed986cf : Ic Launcher icon update
+| * 8f51e87 : Updated the third button texts
+* | 036817b : zoom image
+|/  
+* 50969b5 : images,sub directory
+*   dc78987 : List files added, using HTML
+|\  
+| *   a47da02 : Merge branch 'master' of https://github.com/varunkat/EFM
+| |\  
+| * | c3bd86a : changes made for the button 3 .
+* | | b5a099e : List files added, using HTML
+| |/  
+|/|   
+* | cb7ebca : row size
+|/  
+* e303cc3 : listview, SYSEVAL class name change and FileInput
+*   07e989f : Assets file
+|\  
+| * e764d59 : Updated the code by creating new activity
+* | 389f310 : Assets file
+|/  
+* 82dfe99 : ReadMe
+* c562874 : Navigation bar and Fragments Layout
+* d41a043 : commit final
+* dc1823d : Updated the layout with buttons.
+* 2d0872d : Initial commit
