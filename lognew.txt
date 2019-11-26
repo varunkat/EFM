@@ -1,0 +1,141 @@
+commit 5bbfc6359da63d3e04029589d07ce9187d3221a9
+Author: Akash <dilliwalakash@gmail.com>
+Date:   Mon Nov 25 20:28:26 2019 -0500
+
+    final commit
+
+commit 7c24cfe95d81e967a15a270e71ff9b7fce4d6b93
+Author: varunkat <varun.sky56@gmail.com>
+Date:   Mon Nov 25 17:54:48 2019 -0500
+
+    updated the home textview
+
+commit d02a22ef73a8ec9a545a4f26ab6b3bb280776c5b
+Author: varunkat <varun.sky56@gmail.com>
+Date:   Mon Nov 25 17:39:42 2019 -0500
+
+    updated the second button
+
+commit fc2d327b4224a371e346ad012f09f3776ba380c8
+Author: Akash <dilliwalakash@gmail.com>
+Date:   Mon Nov 25 17:12:00 2019 -0500
+
+    3rd button
+
+commit e7171617c731841ca58c78631f7de70782c3e3fb
+Merge: 036817b ed986cf
+Author: Akash <dilliwalakash@gmail.com>
+Date:   Mon Nov 25 15:57:42 2019 -0500
+
+    Merge branch 'master' of https://github.com/varunkat/EFM
+
+commit 036817b429f8b7e9fdaf355cc28a25396b85136e
+Author: Akash <dilliwalakash@gmail.com>
+Date:   Mon Nov 25 15:57:20 2019 -0500
+
+    zoom image
+
+commit ed986cfe8424babb6a454c2e45f50ef9bafab748
+Author: varunkat <varun.sky56@gmail.com>
+Date:   Sat Nov 23 18:10:21 2019 -0500
+
+    Ic Launcher icon update
+
+commit 8f51e87f9eec63233f9b14c2de58d6d6f9fe2781
+Author: varunkat <varun.sky56@gmail.com>
+Date:   Sat Nov 23 17:48:42 2019 -0500
+
+    Updated the third button texts
+
+commit 50969b5119c240350f8f837fb1c0db04082c5a16
+Author: Akash <dilliwalakash@gmail.com>
+Date:   Fri Nov 22 16:55:55 2019 -0500
+
+    images,sub directory
+
+commit dc7898762d9e97262838762ff406b5d4d302c04a
+Merge: b5a099e a47da02
+Author: Akash <dilliwalakash@gmail.com>
+Date:   Wed Nov 20 19:14:39 2019 -0500
+
+    List files added, using HTML
+
+commit b5a099e7ef291713340c044c8a01ca890079d379
+Author: Akash <dilliwalakash@gmail.com>
+Date:   Wed Nov 20 19:13:35 2019 -0500
+
+    List files added, using HTML
+
+commit a47da020ad27b13fe4f04e9a883d8420633da0e1
+Merge: c3bd86a cb7ebca
+Author: varunkat <varun.sky56@gmail.com>
+Date:   Tue Nov 19 17:08:06 2019 -0500
+
+    Merge branch 'master' of https://github.com/varunkat/EFM
+
+commit c3bd86aa9805d0dec143018f946b018c1d69d872
+Author: varunkat <varun.sky56@gmail.com>
+Date:   Tue Nov 19 17:07:35 2019 -0500
+
+    changes made for the button 3 .
+
+commit cb7ebcac142054daf8c4ee3a0de9950a3acbebf1
+Author: Akash <dilliwalakash@gmail.com>
+Date:   Tue Nov 19 16:41:30 2019 -0500
+
+    row size
+
+commit e303cc33325cef4c67756997c2cd9ee7fa830ba4
+Author: Akash <dilliwalakash@gmail.com>
+Date:   Tue Nov 19 16:30:09 2019 -0500
+
+    listview, SYSEVAL class name change and FileInput
+
+commit 07e989f6fb1e87a0633851a3fe818a7f5afa1faf
+Merge: 389f310 e764d59
+Author: Akash <dilliwalakash@gmail.com>
+Date:   Mon Nov 18 20:42:00 2019 -0500
+
+    Assets file
+
+commit 389f310170aacff64bd72578c7b24e7bc31a228e
+Author: Akash <dilliwalakash@gmail.com>
+Date:   Mon Nov 18 20:12:37 2019 -0500
+
+    Assets file
+
+commit e764d59537adba393f1f32ba648d7b1a3f8ac8bb
+Author: varunkat <varun.sky56@gmail.com>
+Date:   Mon Nov 18 10:21:33 2019 -0500
+
+    Updated the code by creating new activity
+
+commit 82dfe9937656ae76f130a2b732ff4b85562944da
+Author: Akash <dilliwalakash@gmail.com>
+Date:   Sun Nov 10 23:51:16 2019 -0500
+
+    ReadMe
+
+commit c562874ad25204fac8736d87c69aaaf1ad33c640
+Author: Akash <dilliwalakash@gmail.com>
+Date:   Sun Nov 10 23:40:45 2019 -0500
+
+    Navigation bar and Fragments Layout
+
+commit d41a0434607d67e2837a2aa4b428147108f77e08
+Author: Akash <dilliwalakash@gmail.com>
+Date:   Sun Nov 10 21:48:29 2019 -0500
+
+    commit final
+
+commit dc1823d6351c727d6b5634eabef932ddd1c38dae
+Author: varunkat <varun.sky56@gmail.com>
+Date:   Fri Nov 8 10:38:46 2019 -0500
+
+    Updated the layout with buttons.
+
+commit 2d0872dae2f4f4b97d992adad825096ddb15e230
+Author: varunkat <54632357+varunkat@users.noreply.github.com>
+Date:   Wed Nov 6 10:21:56 2019 -0500
+
+    Initial commit
