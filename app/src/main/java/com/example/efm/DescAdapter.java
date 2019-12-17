@@ -54,7 +54,7 @@ public class DescAdapter extends ArrayAdapter<String> {
         if (image.length != 0)
         {
             final ImageView imageView = view.findViewById(R.id.imagecam);
-            imageView.setImageResource(image[position]);
+           // imageView.setImageResource(image[position]);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -45,7 +45,7 @@ public class HomeFirstButtonFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-                listContentFrag = new listContentFragment("buttonOneList/"+desc[i]);
+                listContentFrag = new listContentFragment("buttonOneList/"+desc[i], image[i], desc[i]);
                 replaceFragment(listContentFrag);
 
             }

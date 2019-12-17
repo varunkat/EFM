@@ -34,7 +34,7 @@ public class HomeThirdDefinitionFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-                listContentFrag = new listContentFragment(desc[i]);
+                listContentFrag = new listContentFragment(desc[i],0,desc[i]);
                 replaceFragment(listContentFrag);
 
             }

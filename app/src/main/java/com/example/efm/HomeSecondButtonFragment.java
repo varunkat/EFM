@@ -42,7 +42,7 @@ public class HomeSecondButtonFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-                listContentFrag = new listContentFragment(desc[i]);
+                listContentFrag = new listContentFragment(desc[i],image[i],desc[i]);
                 replaceFragment(listContentFrag);
 
             }

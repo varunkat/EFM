@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
 
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+
+
+
 
     <ScrollView
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/managementButton"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+
+
         >
 
         <TextView
@@ -16,21 +24,52 @@
             android:layout_height="match_parent"
             android:layout_margin="5dp"
             android:padding="5dp"
-            android:textSize="18dp" />
+            android:textSize="18dp"
 
-
+            />
     </ScrollView>
 
 
-    <Button
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="manaement"
-        android:id="@+id/managementButton"
-        android:background="#00B8D4"
-        android:layout_alignParentBottom="true"
-        />
+        android:gravity="bottom"
 
 
-</RelativeLayout>
+        android:layout_alignBottom="@+id/scrollView"
+        android:id="@+id/linear"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Management"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:id="@+id/managementButton"
+            android:background="#00B8D4"
+
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="image"
+            android:layout_weight="1"
+
+            android:id="@+id/imageButton"
+            android:background="#00B8D4"
+
+            />
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
