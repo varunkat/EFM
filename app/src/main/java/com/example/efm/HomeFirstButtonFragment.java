@@ -26,6 +26,15 @@ public class HomeFirstButtonFragment extends Fragment {
     Fragment listContentFrag;
     Context c;
     ActionBar actionBar;
+    public void onResume(){
+        super.onResume();
+
+        // Set title bar
+        ((MainActivity) getActivity())
+                .setActionBarTitle("Tracing Findings");
+
+    }
+
     String [] desc = {"Uterine Contractions", "BaseLine FHR", "Baseline Variability", "Accelerations",
             "Early Decelerations", "Variable Decelerations", "Late Decelerations", "Prolonged Decelerations", "Decels in general", "Sinusoidal"};
     int [] image = {R.drawable.ic_camera_alt_black_24dp,R.drawable.baseline_fhr,R.drawable.baseline_variability
@@ -37,6 +46,7 @@ public class HomeFirstButtonFragment extends Fragment {
         View view = inflater.inflate(R.layout.home_first_defination_fra, container, false);
         c = view.getContext();
 
+
         listView = view.findViewById(R.id.listViewDef);
         descAdapter = new DescAdapter(view.getContext(),image,desc);
         listView.setAdapter(descAdapter);
@@ -45,7 +55,60 @@ public class HomeFirstButtonFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
+
                 listContentFrag = new listContentFragment("buttonOneList/"+desc[i], image[i], desc[i]);
+                if(desc[i] == "Uterine Contractions"){
+                    ((MainActivity) getActivity())
+                            .setActionBarTitle("Uterine Contractions");
+
+                }
+                else if(desc[i] == "BaseLine FHR"){
+                    ((MainActivity) getActivity())
+                            .setActionBarTitle("BaseLine FHR");
+
+                }
+                else if(desc[i] == "Baseline Variability"){
+                    ((MainActivity) getActivity())
+                            .setActionBarTitle("Baseline Variability");
+
+                }
+                else if(desc[i] == "Accelerations"){
+                    ((MainActivity) getActivity())
+                            .setActionBarTitle("Accelerations");
+
+                }
+                else if(desc[i] == "Early Decelerations"){
+                    ((MainActivity) getActivity())
+                            .setActionBarTitle("Early Decelerations");
+
+                }
+                else if(desc[i] == "Variable Decelerations"){
+                    ((MainActivity) getActivity())
+                            .setActionBarTitle("Variable Decelerations");
+
+                }
+                else if(desc[i] == "Late Decelerations"){
+                    ((MainActivity) getActivity())
+                            .setActionBarTitle("Late Decelerations");
+
+                }
+                else if(desc[i] == "Prolonged Decelerations"){
+                    ((MainActivity) getActivity())
+                            .setActionBarTitle("Prolonged Decelerations");
+
+                }
+                else if(desc[i] == "Decels in general"){
+                    ((MainActivity) getActivity())
+                            .setActionBarTitle("Decels in general");
+
+                }
+                else if(desc[i] == "Sinusoidal"){
+                    ((MainActivity) getActivity())
+                            .setActionBarTitle("Sinusoidal");
+
+                }
+
+
                 replaceFragment(listContentFrag);
 
             }

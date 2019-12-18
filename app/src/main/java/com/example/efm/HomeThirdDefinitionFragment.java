@@ -35,6 +35,57 @@ public class HomeThirdDefinitionFragment extends Fragment {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
                 listContentFrag = new listContentFragment(desc[i],0,desc[i]);
+                if(desc[i] == "Categoery 1 Management"){
+                    ((MainActivity) getActivity())
+                            .setActionBarTitle("Categoery 1 Management");
+
+                }
+                else if(desc[i] == "Categoery 2 Management"){
+                    ((MainActivity) getActivity())
+                            .setActionBarTitle("Categoery 2 Management");
+
+                }
+                else if(desc[i] == "Categoery 3 Management"){
+                    ((MainActivity) getActivity())
+                            .setActionBarTitle("Categoery 3 Management");
+
+                }
+                else if(desc[i] == "Tachysystole"){
+                    ((MainActivity) getActivity())
+                            .setActionBarTitle("Tachysystole");
+
+                }
+                else if(desc[i] == "Minimal Variability"){
+                    ((MainActivity) getActivity())
+                            .setActionBarTitle("Minimal Variability");
+
+                }
+                else if(desc[i] == "Intermittent Variables"){
+                    ((MainActivity) getActivity())
+                            .setActionBarTitle("Intermittent Variables");
+
+                }
+                else if(desc[i] == "Recurrent Variable Decels"){
+                    ((MainActivity) getActivity())
+                            .setActionBarTitle("Recurrent Variable Decels");
+
+                }
+                else if(desc[i] == "Recurrent Late Decels"){
+                    ((MainActivity) getActivity())
+                            .setActionBarTitle("Recurrent Late Decels");
+
+                }
+                else if(desc[i] == "Fetal Tachy Cardia"){
+                    ((MainActivity) getActivity())
+                            .setActionBarTitle("Fetal Tachy Cardia");
+
+                }
+                else if(desc[i] == "Prolonged decel Brady Cardia"){
+                    ((MainActivity) getActivity())
+                            .setActionBarTitle("Prolonged decel Brady Cardia");
+
+                }
+
                 replaceFragment(listContentFrag);
 
             }
@@ -50,6 +101,14 @@ public class HomeThirdDefinitionFragment extends Fragment {
         transaction.replace(R.id.fragment_container, someFragment);
         transaction.addToBackStack(null);
         transaction.commit();
+    }
+    public void onResume(){
+        super.onResume();
+
+        // Set title bar
+        ((MainActivity) getActivity())
+                .setActionBarTitle("Tracing Intrpartum Management");
+
     }
 }
 

@@ -34,6 +34,13 @@ public class SysevalFragment extends Fragment {
         textview.setMovementMethod(new ScrollingMovementMethod());
         return view;
     }
+    public void onResume(){
+        super.onResume();
 
+        // Set title bar
+        ((MainActivity) getActivity())
+                .setActionBarTitle("Systematic Tracing Evaluation");
+
+    }
 
 }

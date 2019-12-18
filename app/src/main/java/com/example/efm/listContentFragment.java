@@ -37,7 +37,7 @@ String title;
         this.fileName = fileName;
         this.image = image;
         this.title = title;
-    }
+        }
 
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.text_firstbutton_list, container, false);

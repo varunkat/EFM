@@ -1,5 +1,6 @@
 package com.example.efm;
 
+import android.app.ActionBar;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.Html;
@@ -24,6 +25,7 @@ public class HomeFragment extends Fragment {
     String hometext;
     FileInput fileinput;
     TextView hometextview;
+
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -61,6 +63,7 @@ public class HomeFragment extends Fragment {
                 replaceFragment(descFragment);
 
 
+
             }
         });
 
@@ -93,5 +96,13 @@ public class HomeFragment extends Fragment {
         transaction.replace(R.id.fragment_container, someFragment);
         transaction.addToBackStack(null);
         transaction.commit();
+    }
+    public void onResume(){
+        super.onResume();
+
+        // Set title bar
+        ((MainActivity) getActivity())
+                .setActionBarTitle("EFM");
+
     }
 }

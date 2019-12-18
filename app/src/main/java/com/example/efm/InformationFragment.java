@@ -22,6 +22,14 @@ public class InformationFragment extends Fragment {
     AssetManager assetManager;
     FileInput fileInput;
     String disclaimerText;
+    public void onResume(){
+        super.onResume();
+
+        // Set title bar
+        ((MainActivity) getActivity())
+                .setActionBarTitle("Information");
+
+    }
 
 
     @Nullable

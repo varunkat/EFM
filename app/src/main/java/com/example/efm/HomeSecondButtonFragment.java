@@ -43,6 +43,22 @@ public class HomeSecondButtonFragment extends Fragment {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
                 listContentFrag = new listContentFragment(desc[i],image[i],desc[i]);
+                if(desc[i] == "Categoery I"){
+                    ((MainActivity) getActivity())
+                            .setActionBarTitle("Categoery I");
+
+                }
+                else if(desc[i] == "Categoery II"){
+                    ((MainActivity) getActivity())
+                            .setActionBarTitle("Categoery II");
+
+                }
+                else if(desc[i] == "Categoery III"){
+                    ((MainActivity) getActivity())
+                            .setActionBarTitle("Categoery III");
+
+                }
+
                 replaceFragment(listContentFrag);
 
             }
@@ -59,5 +75,13 @@ public class HomeSecondButtonFragment extends Fragment {
         transaction.replace(R.id.fragment_container, someFragment);
         transaction.addToBackStack(null);
         transaction.commit();
+    }
+    public void onResume(){
+        super.onResume();
+
+        // Set title bar
+        ((MainActivity) getActivity())
+                .setActionBarTitle("Tracing Interpretations");
+
     }
 }
