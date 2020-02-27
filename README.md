@@ -2,7 +2,7 @@
 
 The application mainly provides information about the basic EFM guidelines for the ease of Doctors. It was built by the requirements provided by Dr. Steinberg.We are 
 a team of two who worked in designig the Application.
-Team members: Aakash Dilliwal, Varun Katragadda.
+Team members: Akash Dilliwal, Varun Katragadda.
 
 
 
@@ -29,6 +29,6 @@ Team members: Aakash Dilliwal, Varun Katragadda.
  The coding is done in java for main files and in xml for styles implementations.
 
 
-![alt text]1.png
+![alt text](1.png)
 
 
