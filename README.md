@@ -29,7 +29,8 @@ Team members: Akash Dilliwal, Varun Katragadda.
  The coding is done in java for main files and in xml for styles implementations.
 
 
-![alt text](1.png)
+<img src="1.png" width="48">
+
 ![alt text](2.png)
 ![alt text](3.png)
 
