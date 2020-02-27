@@ -31,7 +31,7 @@ Team members: Akash Dilliwal, Varun Katragadda.
 
 <img src="1.png" width="48">
 
-![alt text](2.png)
-![alt text](3.png)
+<img src="2.png" width="48">
+<img src="3.png" width="48">
 
 
